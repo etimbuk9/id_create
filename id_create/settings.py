@@ -82,10 +82,9 @@ WSGI_APPLICATION = 'id_create.wsgi.application'
 import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.config(
+    'default': dj_database_url.parse(
         # Feel free to alter this value to suit your needs.
-        default='postgresql://postgres:postgres@localhost:5432/id_create',
-        conn_max_age=600
+        url=os.environ.get('DATABASE_URL'),
     )
 }
 
