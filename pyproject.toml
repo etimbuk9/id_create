@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "id_create"}]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 django = "^4.1.7"
 pillow = "^9.4.0"
 pandas = "^1.5.3"
