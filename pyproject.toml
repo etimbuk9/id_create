@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "id-create"
+version = "0.1.0"
+description = ""
+authors = ["etimbuk9 <etimbuk9@yahoo.co.uk>"]
+readme = "README.md"
+packages = [{include = "id_create"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^4.1.7"
+pillow = "^9.4.0"
+pandas = "^1.5.3"
+qrcode = "^7.4.2"
+whitenoise = {extras = ["brotli"], version = "^6.3.0"}
+gunicorn = "^20.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
