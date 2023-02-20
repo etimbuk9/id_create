@@ -1,0 +1,20 @@
+databases:
+  - name: id_create
+    databaseName: id_create
+    user: id_create
+
+services:
+  - type: web
+    name: id_create
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn id_create.wsgi:application"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: id_create
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4
