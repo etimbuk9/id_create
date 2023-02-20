@@ -10,7 +10,6 @@ packages = [{include = "id_create"}]
 python = "^3.7"
 django = "^4.1.7"
 pillow = "^9.4.0"
-pandas = "^1.5.3"
 qrcode = "^7.4.2"
 dj-database-url = "^1.2.0"
 psycopg2-binary = "^2.9.5"
