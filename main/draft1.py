@@ -1,7 +1,7 @@
 # import cv2
 from PIL import Image, ImageDraw, ImageFont
 import textwrap
-import pandas as pd
+# import pandas as pd
 import os
 from datetime import datetime as dt
 from id_create.settings import BASE_DIR
