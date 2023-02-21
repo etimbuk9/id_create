@@ -19,5 +19,5 @@ psycopg2-binary = "^2.9.5"
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["setuptools", "poetry_core"]
 build-backend = "poetry.core.masonry.api"
