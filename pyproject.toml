@@ -8,16 +8,17 @@ packages = [{include = "id_create"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pandas = "^1.5.3"
 Django = "^4.1.7"
+setuptools = "^65"
+pandas = "^1.5.3"
 Pillow = "^9.4.0"
 qrcode = "^7.4.2"
-whitenoise = {extras = ["brotli"], version = "^6.3.0"}
-gunicorn = "^20.1.0"
 dj-database-url = "^1.2.0"
 psycopg2-binary = "^2.9.5"
+whitenoise = {extras = ["brotli"], version = "^6.3.0"}
+gunicorn = "^20.1.0"
 
 
 [build-system]
-requires = ["setuptools", "poetry_core"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
