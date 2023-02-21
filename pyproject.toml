@@ -17,6 +17,7 @@ whitenoise = {extras = ["brotli"], version = "^6.3.0"}
 gunicorn = "^20.1.0"
 pandas = "^1.5.3"
 update = "^0.0.1"
+setuptools = "^67.3.3"
 
 
 [build-system]
